@@ -24,7 +24,7 @@ zmodload zsh/datetime
 SEARCH_PATH=${1:-$PWD}
 SEARCH_RE=${2:-}
 MAX_SIZE=${3:-512k}
-ERR_LOG="/tmp/${0:t}_$(_timestamp)_errors.txt"
+ERR_LOG="/private/tmp/${0:t}_$(_timestamp)_errors.txt"
 CR=$'\n'
 
 _red() { printf '\e[1;31m%s\e[0m\n' "$1"; }
